@@ -24,7 +24,7 @@ export default function SkillsSection({ theme }: { theme: "retro" | "sunset" }) 
     <section className="py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 
-          className={`text-3xl font-bold mb-12 text-center ${
+          className={`text-4xl font-bold mt-8 mb-12 text-center ${
             theme === "retro" 
               ? "text-green-400 font-mono" 
               : "text-orange-400 font-sans"

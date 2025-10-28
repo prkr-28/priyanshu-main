@@ -16,9 +16,12 @@ interface IntroProps {
 }
 
 export default function IntroSection({ setActiveSection, theme = "sunset" }: IntroProps) {
+  // GitHub Snake SVG URL
+  const githubSnakeUrl = "https://raw.githubusercontent.com/prkr-28/prkr-28/output/snake.svg"
+
   return (
-    <section className="min-h-screen relative flex items-center">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+    <section className="min-h-screen relative flex flex-col justify-center items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-40">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
@@ -264,6 +267,36 @@ export default function IntroSection({ setActiveSection, theme = "sunset" }: Int
           </motion.div>
         </div>
       </div>
+
+      {/* ✅ GitHub Activity Section */}
+      <section className="w-full mt-20">
+        <h2 className="text-5xl font-bold text-center text-white mb-8">
+          GitHub Activity
+        </h2>
+        <div className="flex justify-center">
+          <div className="w-full max-w-4xl p-6">
+            <img
+              src={githubSnakeUrl}
+              alt="GitHub Snake Animation"
+              className="w-full rounded-lg shadow-lg border border-orange-400/20"
+              loading="lazy"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement
+                target.style.display = "none"
+                const fallback = document.getElementById("fallback-message")
+                if (fallback) fallback.style.display = "block"
+              }}
+            />
+            <div className="text-center text-gray-400 mt-4 hidden" id="fallback-message">
+              <p>GitHub Snake Animation Loading...</p>
+              <p className="text-sm mt-2">Setting up GitHub snake animation...</p>
+            </div>
+            <p className="text-center text-gray-400 mt-4">
+              Snake eating my GitHub commits 🐍
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
   )
 }

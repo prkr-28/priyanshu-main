@@ -45,7 +45,7 @@ export default function ProjectsSection({
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`text-2xl sm:text-3xl font-bold mb-12 text-center ${
+        className={`text-2xl sm:text-3xl font-bold mb-12 mt-8 text-center ${
           theme === "retro" ? "font-mono text-green-400" : "font-sans text-orange-400"
         }`}
       >
