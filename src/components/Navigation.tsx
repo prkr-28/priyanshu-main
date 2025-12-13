@@ -64,8 +64,8 @@ export default function Navigation({
         <nav
           className={`mx-auto max-w-7xl rounded-full shadow-lg transition-all duration-300 ${isScrolled
             ? theme === "retro"
-              ? "bg-gray-700/80 backdrop-blur-md shadow-lg shadow-green-500/10"
-              : "bg-gray-600/80 backdrop-blur-md shadow-lg shadow-orange-500/10"
+              ? "bg-gray-700/80 backdrop-blur-lg shadow-lg shadow-green-500/10"
+              : "bg-gray-600/80 backdrop-blur-lg shadow-lg shadow-orange-500/10"
             : theme === "retro"
               ? "bg-gray-700/60"
               : "bg-gray-600/60"
@@ -94,7 +94,7 @@ export default function Navigation({
                   <button
                     key={item.section}
                     onClick={() => setActiveSection(item.section)}
-                    className={`text-sm font-medium transition-colors duration-200 relative group hover:pb-1 ${activeSection === item.section
+                    className={`text-sm font-medium transition-all duration-300 relative group hover:pb-1 ${activeSection === item.section
                       ? theme === "retro"
                         ? "text-green-400"
                         : "text-orange-400"
@@ -103,7 +103,7 @@ export default function Navigation({
                   >
                     {item.title}
                     <span
-                      className={`absolute -bottom-1 left-0 w-0 h-[2px] transition-all duration-200 group-hover:w-full ${theme === "retro" ? "bg-green-400" : "bg-orange-400"
+                      className={`absolute -bottom-1 left-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${theme === "retro" ? "bg-green-400" : "bg-orange-400"
                         } ${activeSection === item.section ? "w-full" : ""}`}
                     />
                   </button>
