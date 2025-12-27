@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import CLI from './CLI'
 import IntroSection from './sections/IntroSection'
 import ProjectsSection from './sections/ProjectsSection'
-import BlogsSection from './sections/BlogsSection'
+import ResumeSection from './sections/ResumeSection'
 import SkillsSection from './sections/SkillsSection'
 import ExperienceSection from './sections/ExperienceSection'
 import EducationSection from './sections/EducationSection'
@@ -31,7 +31,7 @@ export default function Portfolio() {
 
     window.addEventListener('mousemove', handleMouseMove)
     window.addEventListener('touchmove', handleTouchMove)
-    
+
     return () => {
       window.removeEventListener('mousemove', handleMouseMove)
       window.removeEventListener('touchmove', handleTouchMove)
@@ -40,11 +40,10 @@ export default function Portfolio() {
 
   return (
     <div
-      className={`min-h-screen flex flex-col ${
-        theme === 'retro'
+      className={`min-h-screen flex flex-col ${theme === 'retro'
           ? 'bg-gray-900 font-mono'
           : 'bg-gradient-to-br from-gray-900 via-purple-900 to-orange-900 font-sans'
-      } text-gray-100`}
+        } text-gray-100`}
     >
       <CursorFollower mousePosition={mousePosition} theme={theme} />
       <Navigation
@@ -72,7 +71,7 @@ export default function Portfolio() {
                 <div className="w-full">
                   {activeSection === 'intro' && <IntroSection theme={theme} setActiveSection={setActiveSection} />}
                   {activeSection === 'projects' && <ProjectsSection theme={theme} />}
-                  {activeSection === 'blogs' && <BlogsSection theme={theme} />}
+                  {activeSection === 'resume' && <ResumeSection theme={theme} />}
                   {activeSection === 'skills' && <SkillsSection theme={theme} />}
                   {activeSection === 'experience' && <ExperienceSection theme={theme} />}
                   {activeSection === 'education' && <EducationSection theme={theme} />}
@@ -84,9 +83,8 @@ export default function Portfolio() {
         </div>
       </main>
       <footer
-        className={`text-center py-6 text-gray-500 text-sm ${
-          theme === 'retro' ? 'font-mono' : 'font-sans'
-        }`}
+        className={`text-center py-6 text-gray-500 text-sm ${theme === 'retro' ? 'font-mono' : 'font-sans'
+          }`}
       >
         © {new Date().getFullYear()} Priyanshu Kumar. All rights reserved.
       </footer>

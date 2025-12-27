@@ -30,7 +30,7 @@ export default function CLI({ theme, setActiveSection, setTheme, setCliMode }: C
     "help",
     "intro",
     "projects",
-    "blogs",
+    "resume",
     "skills",
     "experience",
     "education",
@@ -93,7 +93,7 @@ export default function CLI({ theme, setActiveSection, setTheme, setCliMode }: C
         break
       case "intro":
       case "projects":
-      case "blogs":
+      case "resume":
       case "experience":
       case "education":
       case "skills":
@@ -171,9 +171,8 @@ export default function CLI({ theme, setActiveSection, setTheme, setCliMode }: C
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
-      className={`${
-        theme === "retro" ? "bg-black border-green-500 text-green-500" : "bg-gray-900 border-orange-500 text-orange-500"
-      } border-2 rounded-lg p-4 text-sm h-[calc(100vh-8rem)] flex flex-col relative z-40 mt-16 font-mono`}
+      className={`${theme === "retro" ? "bg-black border-green-500 text-green-500" : "bg-gray-900 border-orange-500 text-orange-500"
+        } border-2 rounded-lg p-4 text-sm h-[calc(100vh-8rem)] flex flex-col relative z-40 mt-16 font-mono`}
       role="application"
       aria-label="Portfolio CLI"
     >
@@ -186,11 +185,10 @@ export default function CLI({ theme, setActiveSection, setTheme, setCliMode }: C
           <div className="text-xs">Press &apos;Tab&apos; to autocomplete</div>
           <button
             onClick={() => setCliMode(false)}
-            className={`p-1 rounded-md transition-all duration-200 hover:bg-opacity-20 ${
-              theme === "retro" 
-                ? "hover:bg-green-500/20" 
+            className={`p-1 rounded-md transition-all duration-200 hover:bg-opacity-20 ${theme === "retro"
+                ? "hover:bg-green-500/20"
                 : "hover:bg-orange-500/20"
-            }`}
+              }`}
             aria-label="Close CLI"
           >
             <X className="w-4 h-4" />

@@ -1,1 +1,1 @@
-export type Section = 'intro' | 'projects' | 'blogs' | 'skills' | 'experience' | 'education' | 'contact' 
+export type Section = 'intro' | 'projects' | 'resume' | 'skills' | 'experience' | 'education' | 'contact' 
