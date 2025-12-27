@@ -1,6 +1,17 @@
 export const projects = [
   {
     id: 1,
+    title: "Aivora",
+    description:
+      "An intelligent goal-tracking platform powered by AI to help you achieve your learning objectives with personalized roadmaps, progress tracking, and AI-generated insights.",
+    image: "/aivora.png",
+    github: "https://github.com/prkr-28/Aivora",
+    live: "https://aivora-gold.vercel.app/",
+    techStack:
+      "Next.js, React, TypeScript, Tailwind CSS, Gemini-API, MongoDB, Express.js, Node.js, JWT, Framer Motion",
+  },
+  {
+    id: 2,
     title: "Quizly",
     description:
       "Quizly is a full-stack web application designed for creating, managing, and taking quizzes, flashcards, and documents.",
@@ -11,7 +22,7 @@ export const projects = [
       "Next.js, React, Tailwind CSS, GrokAi API, MongoDB, Express.js, Node.js, Framer Motion",
   },
   {
-    id: 2,
+    id: 3,
     title: "ResumeXpert",
     description:
       "A modern, full-stack resume builder application that helps users create professional resumes with ease. Built with React.js frontend and Node.js backend.",
@@ -22,7 +33,7 @@ export const projects = [
       "React, TailwindCSS, Framer Motion, HTML2Canvas, jsPDF, Axios, Node.js, Express.js, MongoDB",
   },
   {
-    id: 3,
+    id: 4,
     title: "Vybe",
     description:
       "A modern, feature-rich social media platform built with the MERN stack, featuring real-time messaging, multimedia content sharing, and interactive social features.",
@@ -33,7 +44,7 @@ export const projects = [
       "React.js + Vite, Redux-Toolkit, CSS, Tailwind, Axios, MongoDB, Express.js, Node.js, NodeMailer, Socket.io, JWT, Cloudinary",
   },
   {
-    id: 4,
+    id: 5,
     title: "tastyBytes",
     description:
       "A modern, responsive food delivery application built with React.js that allows users to browse restaurants, view menus, and manage their cart with a beautiful user interface.",
@@ -41,6 +52,16 @@ export const projects = [
     github: "https://github.com/prkr-28/tastybytes",
     live: "https://github.com/prkr-28/tastybytes",
     techStack: "Reactjs, Redux-Toolkit, SwiggyAPI, Tailwind, CSS",
+  },
+  {
+    id: 6,
+    title: "LinkedIn Clone",
+    description:
+      "A LinkedIn clone built using MERN stack with features like user authentication, profile creation, post sharing, and networking capabilities.",
+    image: "/linkedin.jpg",
+    github: "https://github.com/prkr-28/MERN-Linkedin-clone",
+    live: "https://github.com/prkr-28/MERN-Linkedin-clone",
+    techStack: "Reactjs, Redux-Toolkit, Socket.io, Tailwind-CSS MongoDB, Express.js, Node.js JWT, Cloudinary",
   },
 ];
 
