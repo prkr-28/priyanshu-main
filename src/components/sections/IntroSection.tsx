@@ -306,7 +306,7 @@ export default function IntroSection({
             <div>
               <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
                 <span className="block text-2xl sm:text-3xl text-gray-300 mb-1">
-                  Hi, I'm
+                  Hi, I&apos;m
                 </span>
                 <span className="inline-block bg-gradient-to-r from-green-400 to-emerald-500 bg-clip-text text-transparent">
                   PRIYANSHU KUMAR
@@ -328,9 +328,9 @@ export default function IntroSection({
                 and scalable.
               </p>
               <p>
-                Recently, I've been sharpening my problem-solving skills through
-                platforms like LeetCode and working on projects that combine AI,
-                DevOps practices, and modern frontend frameworks.
+                Recently, I&apos;ve been sharpening my problem-solving skills
+                through platforms like LeetCode and working on projects that
+                combine AI, DevOps practices, and modern frontend frameworks.
               </p>
             </div>
           </div>
